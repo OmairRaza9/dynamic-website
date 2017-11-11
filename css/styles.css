@@ -199,26 +199,25 @@ figure {
 .about > p {
   margin: 0;
 }
-
-@media screen and ( min-width: 768px ) {
-  .site-nav{
-    position: fixed;
-    left: 0;
-    height: 100%;
-    width: 10%;
-    bottom: 0;
-    padding: 90px 0 0 0;
-    z-index: 1;
+@media(min-width:1300px)
+{
+  .movie:first-child{
+      width:25%;
+    }
+   .movie:first-child .movie-backdrop{
+      display:none;
+    }
+  .movie:first-child .movie-poster{
+      display:block;
+    }
+  .movie{
+    width:25%;
+    float:left;
   }
-  .site-nav-list {
-      display: inline-grid;
-}
-ul{
-  list-style: none;
-}
-header h1{
-  z-index: 10;
-}
-.movie-overview {
-    display: inline-block;
+  .movie:first-child .movie-overview{
+      display:none;
+    }
+  .movie:hover .movie-overview{
+    display:block;
+  }
 }
